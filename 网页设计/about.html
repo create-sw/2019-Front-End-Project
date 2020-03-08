@@ -1,0 +1,285 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>电影商城</title>
+        <!-- 引入CSS -->
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/plyr.css">
+        <!-- 导入bootstrap -->
+        <link href="assets/css/news.css" type="text/css"  rel="stylesheet">     
+        <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <div style="height: 1.3em;width: 100%;background-color: #41443e;"></div>
+    <!-- 新闻页：网站头部 -->
+        
+    <nav class="navbar navbar-default" role="navigation">
+        <a class="navbar-brand wow fadeInDownBig" href="index.html" style="margin-left: 3%;margin-top: -3%;position: absolute;z-index:9;" ><img class="office-logo" src="assets/img/slider/huan.png" alt="Office"></a> 
+              <div class="container-fluid" style="margin-left: 15%;">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse"
+                          data-target="#example-navbar-collapse">
+                      <span class="sr-only">切换导航</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+              </div>
+              <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                  <ul class="nav navbar-nav">
+                      <li style="margin-right: 50px;"><a href="index.html" style="font-size: 15px;border-top:10px;">
+                          <i class="fa fa-free-code-camp fa-lg c5" aria-hidden="true"></i> 首页推荐</a></li>
+                      <li  class="active" style="margin-right: 50px;"><a href="#"style="font-size:15px ;"><i class="fa fa-newspaper-o" aria-hidden="true"></i> 热点新闻</a></li>
+                          <li style="margin-right: 50px;"><a href="team.html"style="font-size: 15px;"><i class="fa fa-users" aria-hidden="true"></i> 拼团购票</a></li>
+                      <li style="margin-right: 50px;"><a href="blog.html"style="font-size: 15px;"><i class="fa fa-film " aria-hidden="true"></i> 电影评论</a> </li>
+                      <li style="margin-right: 20px;"><a href="team.html"style="font-size: 15px;"><i class="fa fa-phone-square " aria-hidden="true"></i> 联系我们</a> </li>
+            
+                          <input class="search" type="search" maxlength="32" placeholder="   找影视剧、影人、影院" autocomplete="off">
+                          <a href="#" class="shousuo" > <i  class="fa fa-search fa-2x " aria-hidden="true" style="color:#74B9B9 ;"></i></a> 
+                          <i class="fa fa-user fa-2x c7" aria-hidden="true" ></i><a href="#" ><span class="login">  登录</span></a><span>  /  </span><a href="#"class="regist">注册</a>
+      
+              </div>
+              </div>
+          </nav>
+
+
+    <!-- 新闻页：最新发布的电影预告 -->
+
+    <div class="movie">
+      <video poster="images/movie.jpg" controls style="height:500px !important" src="movies/姜子牙1.mp4">
+      </video>
+    </div>
+
+
+    <div id="banners"></div>
+<!-- 新闻页：网站中部 -->
+<hr class="featurette-divider divide">
+<div class="radius"><p>本周热度明星</p>
+  
+</div>
+<div class="container marketing" style="  box-shadow: 0 1px 4px rgba(0, 0, 0, 1)">
+
+  <!--新闻页：本周热度明星-->
+  <div class="row" style="margin-left: 10%;">
+    <div class="col-lg-4" >
+      <img class="img-circle" src="images/star1.png" alt="Generic placeholder image" width="140" height="140">
+      <h2>小罗伯特·唐尼</h2>
+      <p>唐尼在出演《钢铁侠》后一夜成名，他身上的那种坏坏的气息，
+        玩世不恭的花花公子性格和钢铁侠完全一样，<br>
+        简直就是迄今为止漫威电影里最像原著的人物。 <br>
+        同时凭借这部电影漫威一样是打了一个漂亮的开门红。 成功的开启了漫威电影宇宙系列。
+      </p>
+      <p><a class="btn btn-default" href="#" role="button">查看更多 »</a></p>
+    </div>
+    <div class="col-lg-4">
+      <img class="img-circle" src="images/star2.png" alt="Generic placeholder image" width="140" height="140">
+      <h2>刘昊然</h2>
+      <p>电影《唐人街探案2》中一个Bug般的存在就是男二号—秦风。<br>秦风是现代科学的代表，他不相信鬼神，只相信科学和逻辑背后的真相。<br>
+      秦风在电影中堪比最强大脑，但实际上他所展示的非同常人的功能主要有两种：第一种、记忆宫殿，这种能力是英国最著名的侦探福尔摩斯常用的一种方式。</p>
+      <p><a class="btn btn-default" href="#" role="button">查看更多 »</a></p>
+    </div>
+    <div class="col-lg-4">
+      <img class="img-circle" src="images/star4.png" alt="Generic placeholder image" width="140" height="140">
+      <h2>哪吒</h2>
+      <p>凭借出演动漫《哪吒之魔童降世》一举获得全国观众的喜爱。<br>凭借其丑丑的萌萌的造型让许多观众疯狂赞叹，拿下了中国2019年年度总票房第一的好成绩！<br>
+        这无疑是为国产动漫的发展增添了一股重要的信心，相信国漫的发展会越发强大。</p>
+      <p><a class="btn btn-default" href="#" role="button">查看更多 »</a></p>
+    </div>
+  </div>
+  <!-- 推荐页：新闻 -->
+
+ <hr class="featurette-divider divide">
+  <div class="radius"><p>电影幕后花絮</p>
+  </div>
+  
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">懵圈的小蜘蛛  <span class="text-muted"> --- 与空气对打</span></h2>
+      <p class="lead">汤姆·赫兰德（饰演：蜘蛛侠）声称不仅没有《复联4》剧本，还不知道自己和谁演对手戏。<br><br>导演回复到：“是的，汤姆·赫兰德没有拿到过剧本，他只有自己的台词。
+        他甚至不知道自己在和谁演对手戏，我们只是用非常模糊的术语来描述场景中发生的事，因为他总是会提前把内容泄露出去”。<br><br>大家懂的都懂，心疼一脸问号的小蜘蛛。</p>
+    </div>
+    <div class="col-md-5">
+      <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/features1.png" data-holder-rendered="true">
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 col-md-push-5">
+      <h2 class="featurette-heading">女装大佬？ <span class="text-muted">--- 唐探2</span></h2>
+      <p class="lead">2017年的网络热词一定不能少了“女装大佬”，而《唐人街探案2》恰好用上了这一个点。<br><br>
+        刘昊然的女装反串真的不由人想感慨一句“好清秀的姑娘”，而王宝强与肖央的反串则有一股辣眼睛的味道，但依然爆笑，整个片段让人不知道该看谁好，每个人都是一身亮点。<br><br>
+        虽然反串一直都是喜剧中缺不了的元素，但如此兼具艳与俗，养眼与辣眼的反串我是第一次见！</p>
+    </div>
+    <div class="col-md-5 col-md-pull-7">
+      <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/features2.png" data-holder-rendered="true">
+  </div>
+  </div>
+
+<hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">作为一个外星人<span class="text-muted">--- 我太南了</span></h2>
+      <p class="lead">《疯狂的外星人》由沈腾，黄渤主演，靠耍猴戏为生的耿浩和酒贩子好友大飞，经营着各自很惨淡的“事业”<br><br>然而“天外来客”的意外降临，打破了二人的生活,
+        跨物种的对决，别开生面的“星战”，在中国某海边城市上演啦。<br><br>
+        希望这部影片可以让大家更爱和保护我们身边的小动物，可以不爱，但不要伤害</p>
+    </div>
+    <div class="col-md-5">
+      <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/features3.png" data-holder-rendered="true">
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+</div>
+<!-- 新闻页：关于本次全国肺炎疫情 -->
+    <div class="container" style="margin-top: 40px;">   
+        <div class="row">
+            <div class="side-left col-sm-4 col-md-4" style="height: 100%;">
+
+                <h3 class="lead"><i class="fa fa-star" aria-hidden="true"></i> 谈谈本次全国疫情（题外话）</h3><hr>
+
+                <p style="letter-spacing: 2px;">2020年春节与往常有些不同，“新型冠状病毒”“武汉”频频出现在热搜榜，而全国的街道也因为这两个词变得冷冷清清，毫无节日氛围。</p>
+                <a href="#anchor1" style="color: rgb(75, 2, 2);"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> 了解疫情最新情况</a><br>
+                <a href="#anchor2"style="color: rgb(75, 2, 2);"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> 疫情实时动态</a><br>
+                <a href="#anchor3"style="color: rgb(75, 2, 2);"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> 官方消息公布</a><br>
+                <br>
+                <h4><i class="fa fa-star" aria-hidden="true"></i> 本次疫情对我国有哪些影响</h4><hr>
+                <div style="color: rgb(99, 8, 8);">
+                <i class="fa fa-exclamation" aria-hidden="true"></i> 首当其冲的就是沿街商业<br></div>
+                <p style="text-indent: 5%;letter-spacing: 2px;"> 按照目前的管控措施，人们大规模出门消费的欲望被无限压低，房租物业成本他们一个月还可以
+                    ，两个月、三个月呢？如果再多两个月沿街商业根本承受不起，另外，即使疫情在2月底被遏制住，人们的恐慌心理会继续持续一个月左右
+                    ，原因很简单，人们会想病毒残余、等彻底被消灭后才会恢复到疫情之前到消费习惯。所以，沿街商业至少要储备3个月的现金流才是安全的。</p>
+                <div style="color: rgb(99, 8, 8);"><i class="fa fa-exclamation" aria-hidden="true"></i> 但是机遇往往与风险并存<br></div>
+                <p style="text-indent: 5%;letter-spacing: 2px;">也会有一些蓬勃发展的行业，比如，制药企业，短视频行业，直播行业，泛5G行业，人工智能行业，VR行业，
+                互联网小贷以及三方支付行业（有很大一部分人现金流吃紧，回可想而知的进行套现、进行网上消费贷款）等，其实可以想象一下，
+                人们不在出门的几个月里面会衍生出来哪些行业，这些行业就是机会，当然，在疫情过后，一些新的互联网营销模式、新的销售模式、新的商业模式可能也会被开发出来，
+                毕竟在家闲着也是闲着，还不如想想之后怎么赚钱来的实在。还会有一些不受影响的行业，比如保险行业，第一产业等，现在正处于冬作物的生长期间，
+                就算再怎么慢，到冬作物收获的时节疫情一定会被遏制，所以可能影响最小的就是第一产业了。</p><br><br><br><br><br><br>
+
+            </div>
+            <div class="col-sm-8 col-md-8">
+                <h3 class="lead"id="anchor1">疫情的发展过程 </h3><hr>
+                <p style="text-indent: 5%;letter-spacing: 2px;">
+                    截止到目前为止，全国已经累计确诊80303例，死亡2947例，而武汉就有47358例。可以说，全国新冠肺炎的的大头都在武汉，
+                    这个新冠肺炎的发源地何以一步步走到今天这个地步？让我们一起来看看疫情的发展过程。
+                </p>
+                <h4>2019 年 12 月 :</h4>
+                <p style="text-indent: 5%;letter-spacing: 2px;">在2020年1月11日武汉卫健委发布《专家解读不明原因的病毒性肺炎最新通报》称“根据国家、省市专家的流行病学调查，
+                这次武汉不明原因的病毒性肺炎病例发病全部在2019年12月8日到2020年1月2日之间。自2020年1月3日以后，临床和流行病学调查显示，没有发现新感染发病的病人。
+                ”与此同时，根据中国疾病预防控制中心的《新型冠状病毒肺炎流行病学特征分析》论文分析，截止到12月31日已经感染了104人，而到1月3日时实际确诊人数也只有44例！
+                此时，绝大部分人都并没有了解这个事情，即使少量关注到此事的人员也仅仅是关注而已。
+                </p>
+                <h4>2020 年 1 月  10 日 :</h4>
+                <p style="text-indent: 5%;letter-spacing: 2px;">此时已经确定肺炎是新型冠状病毒引起，初步确诊的病例是41例。而根据中国疾病预防控制中心的《新型冠状病毒肺炎流行病学特征分析》论文分析，
+                    此时感染人数已经是653，确诊人数实际上只是感染人数的零头，大量感染者无意识的将病毒传播给其他人。
+                    然而更要命的是1月11日武汉卫健委发布《专家解读不明原因的病毒性肺炎最新通报》特别强调“目前没有发现明确的人传人证据！”。
+                    也正是这句话奠定了直到钟南山到达武汉前的基调，武汉市领导的判断因此出现了巨大偏差。但此时国家已经逐渐意识到问题的严重性，并在国家卫健委网站予以通报。
+                </p>
+                <h4>2020 年 1 月 20 日 ：</h4>
+                <p style="text-indent: 5%;letter-spacing: 2px;">
+                    全国已经确诊291例，此时问题已经很严重了。根据中国疾病预防控制中心的《新型冠状病毒肺炎流行病学特征分析》论文分析，此时感染人数已经是5417了。
+                    虽然这些数据都是全国数据，但绝大部分都是在武汉。1月20日钟南山确定人传人！但是武汉市民还沉浸在节日的祥和气氛中，甚至1月21日还举办了百步亭万家宴！
+
+                </p>
+                <h3 class="lead"id="anchor2">2020年1月23日：</h3>
+                <p style="text-indent: 5%;letter-spacing: 2px;">
+                    武汉封城！此时所有人才意识到疫情已经很严重了！在封城之前，武汉市提前进行了通报，大量在武汉学习工作生活的人员离开武汉散布到全国甚至世界各地！疫情被彻底引爆！
+                    之后疫情蔓延的情况已经为我们每个人所熟知！疫情没有扼杀在摇篮里，那么只能花费更大的力气将它扑灭！    
+                </p>
+
+                <h3 class="lead"id="anchor3">总 结 ：</h3>
+                <blockquote>
+                    <em>武汉中部枢纽对全国影响非常大，很多小问题未处理好，直接带来全国性的影响，未来武汉也可能受到更大的重视，避免出来类似的问题。
+                        正所谓，不破不立，武汉未来应该会发展的更好。新任领导会让武汉软实力继续发展，补齐武汉营商环境的短板，促进民营经济的发展。
+                    </em>
+                </blockquote>
+                <p class="block-author"><i class="fa fa-star" aria-hidden="true"></i> 武汉加油！<i class="fa fa-star" aria-hidden="true"></i> 中国加油！</p>
+                <br><br>
+            </div>  
+        </div>    
+    </div>  
+
+    <!-- 新闻页：网站脚注 -->
+    <footer> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3><i class="fa fa-map-marker"></i> 联系我们:</h3>
+                    <p class="footer-contact">
+                        江西省赣州市章贡区客家大道水南镇156号<br><br>
+                        电话: 1800245356 &nbsp; &nbsp;传真: 1.800.245.357<br><br>
+                        Email: hello@world.com<br>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3><i class="fa fa-external-link"></i> 友情链接</h3>
+                    <p> <a href="#"> 慕课网（学习天堂）</a></p>
+                    <p> <a href="#"> 知乎 (不懂就问)</a></p>
+                    <p> <a href="#"> LeetCode (刷题必备)</a></p>
+                    <p> <a href="#"> 掘金 (了解动向)</a></p>
+                    <p> <a href="#"> 虎牙直播 (撩小姐姐)</a></p> 
+                </div>
+              <div class="col-md-4">
+                <h3><i class="fa fa-heart"></i> 社区交流</h3>
+                <div id="social-icons">
+                    <a href="#" class="btn-group google-plus">
+                        <i class="fa fa-qq"></i>
+                    </a>
+                      <a href="#" class="btn-group linkedin">
+                        <i class="fa fa-tencent-weibo"></i>
+                    </a>
+                      <a href="#" class="btn-group twitter">
+                        <i class="fa fa-weibo"></i>
+                    </a>
+                      <a href="#" class="btn-group facebook">
+                        <i class="fa fa-weixin"></i>
+                    </a>
+                </div>
+              </div>    
+        </div>
+      </div>
+    </footer>
+
+    
+    <div class="copyright text center">
+        <p>&copy; Copyright 2020, <a href="#">应科嵌入式系统班</a>. &nbsp;&nbsp;  Create by : <a href="#">a boring boy</a></p>
+    </div>
+
+
+
+    <script src="js/plyr.js"></script>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>plyr.setup();</script>
+    <script>
+      new WOW().init();
+    </script>
+     <!-- <script type="text/javascript">$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});</script> -->
+
+  </body>
+</html>

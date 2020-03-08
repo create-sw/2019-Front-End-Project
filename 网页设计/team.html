@@ -1,0 +1,229 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>电影商城</title>
+        <!-- 引入CSS -->
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <!-- 导入bootstraps -->
+        <link href="assets/css/index.css" type="text/css"  rel="stylesheet">     
+        <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/team.css" type="text/css"  rel="stylesheet">     
+    </head>
+    <body>
+    <!-- 团购页：网站头部 -->
+    <div style="height: 1.3em;width: 100%;background-color: #41443e;"></div>
+    <nav class="navbar navbar-default" role="navigation">
+        <a class="navbar-brand wow fadeInDownBig" href="index.html" style="margin-left: 3%;margin-top: -3%;position: absolute;z-index:999;" ><img class="office-logo" src="assets/img/slider/huan.png" alt="Office"></a> 
+              <div class="container-fluid" style="margin-left: 15%;">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse"
+                          data-target="#example-navbar-collapse">
+                      <span class="sr-only">切换导航</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+              </div>
+              <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                  <ul class="nav navbar-nav">
+                      <li  style="margin-right: 50px;"><a href="index.html" style="font-size: 15px;border-top:10px;">
+                          <i class="fa fa-free-code-camp fa-lg c5" aria-hidden="true"></i> 首页推荐</a></li>
+                      <li style="margin-right: 50px;"><a href="about.html"style="font-size:15px ;"><i class="fa fa-newspaper-o" aria-hidden="true"></i> 热点新闻</a></li>
+                          <li  class="active" style="margin-right: 50px;"><a href="#"style="font-size: 15px;"><i class="fa fa-users" aria-hidden="true"></i> 拼团购票</a></li>
+                      <li style="margin-right: 50px;"><a href="blog.html"style="font-size: 15px;"><i class="fa fa-film " aria-hidden="true"></i> 电影评论</a> </li>
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown"style="font-size: 15px;margin-right:10px;" >
+                              <i class="fa fa-address-card-o" aria-hidden="true"></i>  会员特权 <b class="caret"></b>
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a href="#">免费下载</a></li>
+                              <li><a href="#">下载加速</a></li>
+                              <li><a href="#">抢先观看</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#">续费会员</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#">续费超级会员</a></li>
+                          </ul>
+                      </li>
+                     
+                  </ul>
+                          <input class="search" type="search" maxlength="32" placeholder="   找影视剧、影人、影院" autocomplete="off">
+                          <a href="#" class="shousuo" > <i  class="fa fa-search fa-2x " aria-hidden="true" style="color:#74B9B9 ;"></i></a> 
+                          <i class="fa fa-user fa-2x c7" aria-hidden="true" ></i><a href="#" ><span class="login">  登录</span></a><span>  /  </span><a href="#"class="regist">注册</a>
+      
+              </div>
+              </div>
+          </nav>
+
+<!-- 散列海报区域 -->
+                <div class="wrap" id="wrap">
+                    <!--photo 负责x，y轴的旋转，移动-->
+                <div class="photo photo_front" id="photo_{{index}}" onclick="turn(this)">
+                    <!--photo-wrap负责翻转-->
+                    <div class="photo-wrap">
+                        <div class="side side-front">  
+                             <p class="image"><img src="photo/{{img}}" ></p>
+                             <p class="caption">{{caption}}</p>
+                         </div>
+                    <div class="side side-back">
+                    <p class="desc">{{desc}}</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+<!-- 团购页：网站中部 -->
+    
+        <div class="rule">
+            <p style="width: 100%;height: 100%;margin-top: 20px;"> 
+    &nbsp; 拼团购票规则：<a href="#" style="color: white;text-decoration: none;"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>   
+    </p>
+    </div> <hr style="color: #41443e;height: 1px;">
+    <div id="banners"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="blockquote-box blockquote-info animated wow fadeInLeft clearfix" >
+                    <div class="square pull-left">
+                        <img src="assets/img/team/member2.png" alt="Feature-img" height="80" width="100">
+                    </div>
+                    <h4>
+                        规则一 ：
+                    </h4>
+                    <p>
+                      <br>每人对于同一场次的电影只能拼一次<br>
+                      拼多次无效 !
+                    </p>
+                </div>
+                <div class="blockquote-box blockquote-primary animated wow fadeInLeft clearfix" style="margin-top: 60px;">
+                    <div class="square pull-left">
+                        <img src="assets/img/team/member1.png" alt="Feature-img" height="80" width="100">
+                    </div>
+                    <h4>
+                      规则三 ：
+                    </h4>
+                    <p>
+                       <br>拼到手的影票价格根据当前拼的人次相关 ！<br>
+                    </p>
+                </div>
+                <div class="blockquote-box blockquote-success animated wow fadeInLeft clearfix" style="margin-top: 60px;">
+                    <div class="square pull-left">
+                        <img src="assets/img/team/member2.png" alt="Feature-img" height="80" width="100">
+                    </div>
+                    <h4>
+                        规则五 ：
+                    </h4>
+                    <p>
+                       <br>成为会员后，拼票仅需三人即可拼团成功 ！
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="blockquote-box blockquote-danger animated wow fadeInRight clearfix">
+                    <div class="square pull-left">
+                        <img src="assets/img/team/member3.png" alt="Feature-img" height="80" width="100">
+                    </div>
+                    <h4>
+                       规则二
+                    </h4>
+                    <p>
+                        <br>拼团购票要满六人才能拼成功 ！
+                    </p>
+                </div>
+                <div class="blockquote-box blockquote-warning animated wow fadeInRight clearfix" style="margin-top: 60px;">
+                    <div class="square pull-left">
+                        <img src="assets/img/team/member2.png" alt="Feature-img" height="80" width="100">
+                    </div>
+                    <h4>
+                        规则四
+                    </h4>
+                    <p>
+                        <br>如若拼团中有恶意拼团者<br>
+                        拼团失败，并发出警告 ！
+                    </p>
+                </div>
+                <div class="blockquote-box animated wow fadeInRight clearfix" style="margin-top: 60px;">
+                    <div class="square pull-left">
+                        <img src="assets/img/team/member1.png" alt="Feature-img" height="80" width="100">
+                    </div>
+                    <h4>
+                        规则六
+                    </h4>
+                    <p>
+                     <br>本拼团活动的一切解释权归本站所有 ！
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div style="margin: 0 auto; width: 100%;position: relative;margin-top: 40px;">
+           <a href="#"> <img src="images/ping.png" alt="参与拼团" style="border-radius: 10px;margin-left: 380px;" ></a>
+        </div>
+    </div>
+
+    <!-- 团购页：网站脚注 -->
+    <footer> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3><i class="fa fa-map-marker"></i> 联系我们:</h3>
+                    <p class="footer-contact">
+                        江西省赣州市章贡区客家大道水南镇156号<br><br>
+                        电话: 1800245356 &nbsp; &nbsp;传真: 1.800.245.357<br><br>
+                        Email: hello@world.com<br>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3><i class="fa fa-external-link"></i> 友情链接</h3>
+                    <p> <a href="#"> 慕课网（学习天堂）</a></p>
+                    <p> <a href="#"> 知乎 (不懂就问)</a></p>
+                    <p> <a href="#"> LeetCode (刷题必备)</a></p>
+                    <p> <a href="#"> 掘金 (了解动向)</a></p>
+                    <p> <a href="#"> 虎牙直播 (撩小姐姐)</a></p> 
+                </div>
+              <div class="col-md-4">
+                <h3><i class="fa fa-heart"></i> 社区交流</h3>
+                <div id="social-icons">
+                    <a href="#" class="btn-group qq">
+                        <i class="fa fa-qq"></i>
+                    </a>
+                      <a href="#" class="btn-group tencent-weibo">
+                        <i class="fa fa-tencent-weibo"></i>
+                    </a>
+                      <a href="#" class="btn-group weibo">
+                        <i class="fa fa-weibo"></i>
+                    </a>
+                      <a href="#" class="btn-group weixin">
+                        <i class="fa fa-weixin"></i>
+                    </a>
+                </div>
+              </div>    
+        </div>
+      </div>
+    </footer>
+
+
+    <div class="copyright text center">
+        <p>&copy; Copyright 2020, <a href="#">应科嵌入式系统班</a>. &nbsp;&nbsp;  Create by : <a href="#" >a boring boy</a></p>
+    </div>
+
+    <!-- 引入JQuery -->
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <!-- 导入bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- 导入WOW -->
+    <script src="js/wow.min.js"></script>
+    <script src="js/team.js"></script>
+    <!-- 初始化WOW -->
+    <script>
+      new WOW().init();
+    </script>
+
+  </body>
+</html>

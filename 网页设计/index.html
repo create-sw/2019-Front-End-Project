@@ -1,0 +1,232 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>电影商城</title>
+        <!-- 引入css样式 -->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" 
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+  <body>
+    <div style="height: 1.3em;width: 100%;background-color: #41443e;"></div>
+    <!--推荐页： 网站头部 -->
+    <nav class="navbar navbar-default" role="navigation">
+  <a class="navbar-brand wow fadeInDownBig" href="index.html" style="margin-left: 3%;margin-top: -3%;position: absolute;z-index:9;" ><img class="office-logo" src="assets/img/slider/huan.png" alt="welcome"></a> 
+        <div class="container-fluid" style="margin-left: 15%;">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active" style="margin-right: 50px;"><a href="#" style="font-size: 15px;border-top:10px;">
+                    <i class="fa fa-free-code-camp fa-lg c5" aria-hidden="true"></i> 首页推荐</a></li>
+                <li style="margin-right: 50px;"><a href="about.html"style="font-size:15px ;"><i class="fa fa-newspaper-o" aria-hidden="true"></i> 热点新闻</a></li>
+                    <li style="margin-right: 50px;"><a href="team.html"style="font-size: 15px;"><i class="fa fa-users" aria-hidden="true"></i> 拼团购票</a></li>
+                <li style="margin-right: 50px;"><a href="blog.html"style="font-size: 15px;"><i class="fa fa-film " aria-hidden="true"></i> 电影评论</a> </li>
+                <li style="margin-right: 20px;"><a href="team.html"style="font-size: 15px;"><i class="fa fa-phone-square " aria-hidden="true"></i> 联系我们</a> </li>
+             
+            </ul>
+                    <input class="search" type="search" maxlength="32" placeholder="   找影视剧、影人、影院" autocomplete="off">
+                    <a href="#" class="shousuo" > <i  class="fa fa-search fa-2x " aria-hidden="true" style="color:#74B9B9 ;"></i></a> 
+                    <i class="fa fa-user fa-2x c7" aria-hidden="true" ></i><a href="#" ><span class="login">  登录</span></a><span>  /  </span><a href="#"class="regist">注册</a>
+
+        </div>
+        </div>
+    </nav>
+
+    <!-- 首页：网站头部 -->
+    <section id="carousel-section" class="section-global-wrapper"> 
+        <div class="container-fluid-kamn">
+            <div class="row">
+                <div id="carousel-1" class="carousel slide" data-ride="carousel">
+
+                    <!-- 轮播图画 -->
+                    <ol class="carousel-indicators visible-lg">
+                        <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-1" data-slide-to="1"></li>
+                        <li data-target="#carousel-1" data-slide-to="2"></li>
+                    </ol>
+        
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="assets/img/slider/post.jpg"  alt="Image of first carousel" style="width: 100%;height: 100%;">
+                            <div class="carousel-caption">
+                                <h3 class="carousel-title hidden-xs">复 仇 者 联 盟 4 ： 终 局 之 战</h3>
+                                <p class="carousel-body">安东尼·罗素 / 乔·罗素</p>
+                                <p><a class="btn btn-lg btn-primary" href="#" role="button">免费观看 <i class="fa fa-play" aria-hidden="true"></i></a></p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="assets/img/slider/post3.png" height="400" alt="Image of second carousel">
+                            <div class="carousel-caption">
+                                <h3 class="carousel-title hidden-xs">哪 吒 之 魔 童 降 世</h3>
+                                <p class="carousel-body">导演：饺子</p>
+                                <p><a class="btn btn-lg btn-primary" href="#" role="button">免费观看 <i class="fa fa-play" aria-hidden="true"></i></a></p>
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <img src="assets/img/slider/post4.jpg" height="400" alt="Image of third carousel">
+                            <div class="carousel-caption">
+                                <h3 class="carousel-title hidden-xs">唐 人 街 探 案 3</h3>
+                                <p class="carousel-body">导演：陈思诚</p>
+                                <p><a class="btn btn-lg btn-primary" href="#" role="button">免费观看 <i class="fa fa-play" aria-hidden="true"></i></a></p>
+                            </div>
+                    </div>
+        
+                    <!-- 左右箭头 -->
+                    <a class="left carousel-control" href="#carousel-1" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-1" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 首页：网站中部 -->
+    <section id="services" class="services-section section-global-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="services-header">
+                    <h3 class="services-header-title" style="font-weight: 800;color: rgb(123, 165, 163);">Welcome to this movie mall</h3>
+                    <p class="services-header-body"><em>本 电 影 商 城 有 何 特 点 ？</em>  </p><hr>
+                </div>
+            </div>
+      
+            <!-- 特点介绍 -->
+            <div class="row services-row services-row-head services-row-1">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="services-group wow animated fadeInLeft" data-wow-offset="40">
+                        <p class="services-icon"><span class="fa fa-mobile fa-5x"></span></p>
+                        <h4 class="services-title">移动端</h4>
+                        <p class="services-body">本网站是响应式网站，PC端和移动端均可使用，方便更多用户观看影视。</p>
+                        <p class="services-more"><a href="#">了解更多</a></p>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="services-group wow animated zoomIn" data-wow-offset="40">
+                        <p class="services-icon"><i class="fa fa-laptop fa-5x"></i></p>
+                        <h4 class="services-title">PC端</h4>
+                        <p class="services-body">本网站是响应式网站，更推荐用户使用PC端，pc端和移动端均可使用。</p>
+                        <p class="services-more"><a href="#">了解更多</a></p>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="services-group wow animated fadeInRight" data-wow-offset="40">
+                        <p class="services-icon"><i class="fa fa-thumbs-o-up fa-5x"></i></p>
+                        <h4 class="services-title">便捷使用</h4>
+                        <p class="services-body">本网站突出核心二字“方便”，使用方便轻松，观看影视舒服自然。</p>
+                        <p class="services-more"><a href="#">了解更多</a></p>
+                    </div>        
+                </div>
+            </div>
+   
+            <div class="row services-row services-row-tail services-row-2">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="services-group wow animated fadeInLeft" data-wow-offset="40">
+                        <p class="services-icon"><span class="fa fa-chrome fa-5x"></span></p>
+                        <h4 class="services-title">谷歌</h4>
+                        <p class="services-body">本网站可以兼容谷歌，可以在谷歌浏览器中便捷使用，操作流畅，观看轻松。</p>
+                        <p class="services-more"><a href="#">了解更多</a></p>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="services-group wow animated zoomIn" data-wow-offset="40">
+                        <p class="services-icon"><i class="fa fa-firefox fa-5x"></i></p>
+                        <h4 class="services-title">火狐</h4>
+                        <p class="services-body">本网站可以兼容火狐，可以在火狐浏览器中便捷使用，操作流畅，观看轻松。</p>
+                        <p class="services-more"><a href="#">了解更多</a></p>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="services-group wow animated fadeInRight" data-wow-offset="40">
+                        <p class="services-icon"><i class="fa fa-internet-explorer fa-5x"></i></p>
+                        <h4 class="services-title">IE</h4>
+                        <p class="services-body">本网站可以兼容IE，可以在IE浏览器中便捷使用，操作流畅，观看轻松。</p>
+                        <p class="services-more"><a href="#">了解更多</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </section>
+ 
+    <!-- 首页：网站脚注 -->
+    <footer> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3><i class="fa fa-map-marker"></i> 联系我们:</h3>
+                    <p class="footer-contact">
+                        江西省赣州市章贡区客家大道水南镇156号<br><br>
+                        电话: 1800245356 &nbsp; &nbsp;传真: 1.800.245.357<br><br>
+                        Email: hello@world.com<br>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3><i class="fa fa-external-link"></i> 友情链接</h3>
+                    <p> <a href="#"> 慕课网（学习天堂）</a></p>
+                    <p> <a href="#"> 知乎 (不懂就问)</a></p>
+                    <p> <a href="#"> LeetCode (刷题必备)</a></p>
+                    <p> <a href="#"> 掘金 (了解动向)</a></p>
+                    <p> <a href="#"> 虎牙直播 (撩小姐姐)</a></p> 
+                </div>
+              <div class="col-md-4">
+                <h3><i class="fa fa-heart"></i> 社区交流</h3>
+                <div id="social-icons">
+                    <a href="#" class="btn-group qq">
+                        <i class="fa fa-qq"></i>
+                    </a>
+                      <a href="#" class="btn-group tencent-weibo">
+                        <i class="fa fa-tencent-weibo"></i>
+                    </a>
+                      <a href="#" class="btn-group weibo">
+                        <i class="fa fa-weibo"></i>
+                    </a>
+                      <a href="#" class="btn-group weixin">
+                        <i class="fa fa-weixin"></i>
+                    </a>
+                </div>
+              </div>    
+        </div>
+      </div>
+    </footer>
+
+    
+    <div class="copyright text center">
+        <p>&copy; Copyright 2020, <a href="#">应科嵌入式系统班</a>. &nbsp;&nbsp;  Create by : <a href="#" target="_blank">a boring boy</a></p>
+    </div>
+
+    <!-- 导入JQuery -->
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <!-- 引入bootstrap -->
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+ integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- 引入WOW.js 实现滚动展示动画特效 -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
